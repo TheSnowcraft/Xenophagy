@@ -1,0 +1,162 @@
+########################
+###     Policies     ###
+########################
+#
+# AI:
+# Base AI-weight is 100, if unchanged
+# AI will grab whatever policy-option has the highest weight
+#
+###
+
+predation_policy = {
+	potential = {
+		always = yes
+	}
+
+	option = {
+		name = "predation_policy_encouraged"
+		policy_flags = {predation_policy_encouraged}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "predation_policy_unregulated"
+		policy_flags = {predation_policy_unregulated}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "predation_policy_regulated"
+		policy_flags = {predation_policy_regulated}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "predation_policy_restricted"
+		policy_flags = {predation_policy_restricted}
+		
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "predation_policy_banned"
+		policy_flags = {predation_policy_banned}
+
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+}
+predation_regulation = {
+	potential = {
+		always = yes
+	}
+	option = {
+		name = "predation_regulation_fodder_aliens_only"
+		policy_flags = {predation_regulation_fodder_aliens_only}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "predation_regulation_aliens_only"
+		policy_flags = {predation_regulation_aliens_only}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "predation_regulation_noncitizens_only"
+		policy_flags = {predation_regulation_noncitizens_only}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "predation_regulation_elites_protected"
+		policy_flags = {predation_regulation_elites_protected}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "predation_regulation_specialists_and_elites_protected"
+		policy_flags = {predation_regulation_specialists_and_elites_protected}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "predation_regulation_slaves_only"
+		policy_flags = {predation_regulation_slaves_only}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "predation_regulation_everyone_on_menu"
+		policy_flags = {predation_regulation_everyone_on_menu}
+		modifier = {
+			
+		}
+
+		AI_weight = {
+			factor = 100
+		}
+	}
+}

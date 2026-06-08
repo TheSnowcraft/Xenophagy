@@ -1,0 +1,108 @@
+######################
+# Vore Leader Traits #
+######################
+
+####################
+# Official Traits #
+####################
+
+# Predator Skill Ranks
+leader_trait_official_pred_1 = {
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { official }
+	opposites = {
+	}
+}
+leader_trait_official_pred_2 = {
+	replace_traits = { "leader_trait_official_pred_1"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { official }
+	opposites = {
+	}
+}
+leader_trait_official_pred_3 = {
+	replace_traits = { "leader_trait_official_pred_2"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { official }
+	opposites = {
+	}
+}
+leader_trait_official_pred_4 = {
+	replace_traits = { "leader_trait_official_pred_3"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { official }
+	opposites = {
+	}
+}
+leader_trait_official_pred_5 = {
+	replace_traits = { "leader_trait_official_pred_4"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { official }
+	opposites = {
+	}
+}

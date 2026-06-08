@@ -1,0 +1,19 @@
+
+is_pred_empire = {
+		owner_species = { has_trait = trait_vore_pred } 
+	NOT = {
+		owner_species = { has_trait = trait_vore_prey }
+	}
+	
+}
+
+is_prey_empire = {
+	owner_species = { has_trait = trait_vore_prey }
+	NOT = {
+		owner_species = { has_trait = trait_vore_pred } 
+	}
+}
+
+is_predbot_empire = {
+		owner_species = { has_trait = trait_vore_predbot }
+}

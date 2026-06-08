@@ -1,0 +1,149 @@
+############################
+###     Options Menu     ###
+############################
+
+namespace = xenophagy_options
+
+event = {
+	id = xenophagy_options.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = xenophagy_is_active
+		country_event = { id = xenophagy_options.2 }
+
+		every_country = {
+			limit = {
+				has_trait = trait_vore_pred
+			}
+			set_country_flag = xenophagy_is_pred_empire
+		}
+		every_country = {
+			limit = {
+				has_trait = trait_vore_prey
+			}
+			set_country_flag = xenophagy_is_prey_empire
+		}
+		every_country = {
+			limit = {
+				has_trait = trait_vore_predbot
+			}
+			set_country_flag = xenophagy_is_pred_machine_empire
+		}
+	}
+}
+
+country_event = {		# Main Menu
+	id = xenophagy_options.2
+	title = xenophagy_options.2.name
+	desc = xenophagy_options.2.desc
+	picture = GFX_evt_xenophagy_options
+	
+	is_triggered_only = yes
+	
+	option = { # Enable Disposal
+		name = xenophagy_options.enable_disposal
+		custom_tooltip = xenophagy_options.enable_disposal_tooltip
+		
+		trigger = {
+			NOT = {
+				has_country_flag = xenophagy_disposal_enabled
+			}
+		}
+		hidden_effect = {
+			country_event = { id = xenophagy_options.3 }
+		}
+	}
+
+	option = { # Disable Disposal
+		name = xenophagy_options.disable_disposal
+		custom_tooltip = xenophagy_options.disable_disposal_tooltip
+
+		trigger = {
+			has_country_flag = xenophagy_disposal_enabled
+		}
+		hidden_effect = {
+			country_event = { id = xenophagy_options.4 }
+		}
+	}
+
+	option = { # Enable Graphic Digestion
+		name = xenophagy_options.enable_graphic_digestion
+		custom_tooltip = xenophagy_options.enable_graphic_digestion_tooltip
+
+		trigger = {
+			NOT = {
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+		}
+		hidden_effect = {
+			country_event = { id = xenophagy_options.5 }
+		}
+	}
+
+	option = { # Disable Graphic Digestion
+		name = xenophagy_options.disable_graphic_digestion
+		custom_tooltip = xenophagy_options.disable_graphic_digestion_tooltip
+
+		trigger = {
+			has_country_flag = xenophagy_graphic_digestion_enabled
+		}
+		hidden_effect = {
+			country_event = { id = xenophagy_options.6 }
+		}
+	}
+
+	option = {		# Exit
+		name = xenophagy_options.exit
+	}
+}
+
+# sub-menu option buttons
+country_event = {
+	id = xenophagy_options.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = xenophagy_disposal_enabled
+		hidden_effect = {
+			country_event = { id = xenophagy_options.2 }
+		}
+	}
+}
+country_event = {
+	id = xenophagy_options.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = xenophagy_disposal_enabled
+		hidden_effect = {
+			country_event = { id = xenophagy_options.2 }
+		}
+	}
+}country_event = {
+	id = xenophagy_options.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = xenophagy_graphic_digestion_enabled
+		hidden_effect = {
+			country_event = { id = xenophagy_options.2 }
+		}
+	}
+}country_event = {
+	id = xenophagy_options.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = xenophagy_graphic_digestion_enabled
+		hidden_effect = {
+			country_event = { id = xenophagy_options.2 }
+		}
+	}
+}

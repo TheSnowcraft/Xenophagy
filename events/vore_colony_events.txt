@@ -1,0 +1,56 @@
+namespace =  xenophagy_colony_events
+
+##################
+# Predatory Cult #
+##################
+# A predatory cult pops up on a newly established colony, encouraging it's adherants to eat locals.
+
+
+
+#######################
+# Trafficking Scandal #
+#######################
+# The planetary elite are accused of running an organised trafficking ring to kidnap lower-class pops for eating.
+
+
+
+###############################
+# Pred Celebrity Goes on Tour #
+###############################
+# A popular pred celebrity goes on tour. They eat a number of people on it.
+
+
+
+###########################
+# Celebrity Eaten on Tour #
+###########################
+# A noted and popular celebrity figure disappears on tour, later to be confirmed to have been eaten by a possessive local fan.
+
+
+
+##############################
+# Prominant Researcher Eaten #
+##############################
+# A prominant researcher in the colonies is eaten, impacting science output with the loss of their intellect.
+
+
+
+#################################
+# Corrupt Cops Eating Innocents #
+#################################
+# Local enforcers are accused of flouting regulation and eating innocent civilians on the job.
+
+
+
+##################################
+# Vore Games Draw Massive Crowds #
+##################################
+# A popular vore game tournament series draws in massive crowds to a colony, increasing tourism.
+
+
+
+####################
+# Vore Games Upset #
+####################
+# A popular vore game ends in an upset as a long-time champion of the games winds up eaten by a newcomer to the games.
+

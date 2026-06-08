@@ -1,0 +1,24 @@
+namespace =  xenophagy_diplomacy_events
+
+###############
+# Envoy Eaten #
+###############
+# An envoy is eaten by the host nation during a diplomatic visit.
+
+
+##############################
+# Envoy Caught Eating People #
+##############################
+# An envoy is caught eating people during a diplomatic visit.
+
+
+#######################
+# Embassy Staff Eaten #
+#######################
+# Part of the embassy staff are eaten by members of the host nation.
+
+
+######################################
+# Embassy Staff Caught Eating People #
+######################################
+# Members of the embassy staff are caught eating their host nation's citizens.

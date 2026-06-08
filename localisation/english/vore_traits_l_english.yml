@@ -1,0 +1,58 @@
+﻿l_english:
+
+ ##############################################
+ #                  SPECIES TRAITS            #
+ ##############################################
+
+# Predator Traits
+# Organic Traits
+ trait_vore_pred: "Hyper-Elastic Digestive System"
+ trait_vore_pred_desc: "This species has developed a hyper-elastic digestive system that allows it to consume and digest prey whole without serious risk or discomfort."
+
+# Machine Traits
+ trait_vore_predbot: "Enlarged Biofuel Processors"
+ trait_vore_predbot_desc: "These machines have biofuel processing systems to generate power large enough to process the average organic."
+
+# Prey Traits
+ trait_vore_prey: "Natural Prey"
+ trait_vore_prey_desc: "This species responds to predation by other species by willingly surrendering to predators so others can survive."
+
+trait_vore_prey_artifical: "Artifical Prey"
+trait_vore_prey_artifical_desc: "This species has been modified to view themselves as food for others, treating their consumption by predators as a mundane occurance."
+
+ ##############################################
+ #                  LEADER TRAITS             #
+ ##############################################
+
+leader_trait_commander_pred_1: "Eager Predator"
+leader_trait_commander_pred_1_desc: "This leader is eager to tuck people away in their belly."
+leader_trait_commander_pred_2: "Experienced Predator"
+leader_trait_commander_pred_2_desc: "More than a few people have slipped down this leader's throat."
+leader_trait_commander_pred_3: "Veteran Predator"
+leader_trait_commander_pred_3_desc: "This battle-hardened predator has devoured plenty of people."
+leader_trait_commander_pred_4: "Master Predator"
+leader_trait_commander_pred_4_desc: "This leader is a master predator and has eaten countless people."
+leader_trait_commander_pred_5: "Apex Predator"
+leader_trait_commander_pred_5_desc: "This leader is at the top of the food chain, devouring any competition with ease."
+
+leader_trait_officer_pred_1: "Eager Predator"
+leader_trait_officer_pred_1_desc: "This leader is eager to tuck people away in their belly."
+leader_trait_officer_pred_2: "Experienced Predator"
+leader_trait_officer_pred_2_desc: "More than a few people have slipped down this leader's throat."
+leader_trait_officer_pred_3: "Veteran Predator"
+leader_trait_officer_pred_3_desc: "This battle-hardened predator has devoured plenty of people."
+leader_trait_officer_pred_4: "Master Predator"
+leader_trait_officer_pred_4_desc: "This leader is a master predator and has eaten countless people."
+leader_trait_officer_pred_5: "Apex Predator"
+leader_trait_officer_pred_5_desc: "This leader is at the top of the food chain, devouring any competition with ease."
+
+leader_trait_scientist_pred_1: "Eager Predator"
+leader_trait_scientist_pred_1_desc: "This leader is eager to tuck people away in their belly."
+leader_trait_scientist_pred_2: "Experienced Predator"
+leader_trait_scientist_pred_2_desc: "More than a few people have slipped down this leader's throat."
+leader_trait_scientist_pred_3: "Veteran Predator"
+leader_trait_scientist_pred_3_desc: "This battle-hardened predator has devoured plenty of people."
+leader_trait_scientist_pred_4: "Master Predator"
+leader_trait_scientist_pred_4_desc: "This leader is a master predator and has eaten countless people."
+leader_trait_scientist_pred_5: "Apex Predator"
+leader_trait_scientist_pred_5_desc: "This leader is at the top of the food chain, devouring any competition with ease."

@@ -1,0 +1,6 @@
+illegal_vore_rate = {
+    base = 150
+    subtract = trigger:planet_crime
+}
+
+

@@ -1,0 +1,55 @@
+﻿l_english:
+
+ #################################
+ # Predatory Imperial Succession #
+ #################################
+
+ xenophagy_leader_events.2_name: "The [GetRulerTitle] Eaten!"
+
+ # Tame Versions
+ # No Vore Rules Broken
+ xenophagy_leader_events.2.nofreaky_desc.1: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.closing.vore_is_fine$"
+ # Predation Outlawed
+ xenophagy_leader_events.2.nofreaky_desc.2: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.closing.vore_is_banned$"
+ # No Nomming Elites
+ xenophagy_leader_events.2.nofreaky_desc.3: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.closing.no_voring_elites$"
+ # Only eat slaves
+ xenophagy_leader_events.2.nofreaky_desc.4: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.closing.only_vore_slaves$"
+ # Only eat fodder
+ xenophagy_leader_events.2.nofreaky_desc.5: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.closing.only_vore_fodder$"
+
+ # Disposal Versions
+ # No Vore Rules Broken
+ xenophagy_leader_events.2.nofreaky_desc.1: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.vore_is_fine$"
+ # Predation Outlawed
+ xenophagy_leader_events.2.nofreaky_desc.2: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.vore_is_banned$"
+ # No Nomming Elites
+ xenophagy_leader_events.2.nofreaky_desc.3: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.no_voring_elites$"
+ # Only eat slaves
+ xenophagy_leader_events.2.nofreaky_desc.4: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.only_vore_slaves$"
+ # Only eat fodder
+ xenophagy_leader_events.2.nofreaky_desc.5: "$xenophagy_leader_events.2.opening$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.only_vore_fodder$"
+
+# Graphic Digestion Versions
+ # No Vore Rules Broken
+ xenophagy_leader_events.2.nofreaky_desc.1: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.closing.vore_is_fine$"
+ # Predation Outlawed
+ xenophagy_leader_events.2.nofreaky_desc.2: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.closing.vore_is_banned$"
+ # No Nomming Elites
+ xenophagy_leader_events.2.nofreaky_desc.3: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.closing.no_voring_elites$"
+ # Only eat slaves
+ xenophagy_leader_events.2.nofreaky_desc.4: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.closing.only_vore_slaves$"
+ # Only eat fodder
+ xenophagy_leader_events.2.nofreaky_desc.5: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.closing.only_vore_fodder$"
+
+# Graphic Digestion + Disposal Versions
+ # No Vore Rules Broken
+ xenophagy_leader_events.2.nofreaky_desc.1: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.vore_is_fine$"
+ # Predation Outlawed
+ xenophagy_leader_events.2.nofreaky_desc.2: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.vore_is_banned$"
+ # No Nomming Elites
+ xenophagy_leader_events.2.nofreaky_desc.3: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.no_voring_elites$"
+ # Only eat slaves
+ xenophagy_leader_events.2.nofreaky_desc.4: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.only_vore_slaves$"
+ # Only eat fodder
+ xenophagy_leader_events.2.nofreaky_desc.5: "$xenophagy_leader_events.2.opening$$%xenophagy_leader_events.2.graphic_digestion_segment%$$xenophagy_leader_events.2.disposal_segment$$xenophagy_leader_events.2.closing.only_vore_fodder$"

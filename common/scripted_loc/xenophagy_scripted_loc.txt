@@ -1,0 +1,133 @@
+####################################
+# DISPOSAL SCRIPTED LOC REFERENCES # 
+####################################
+
+# What Hole?
+defined_text = { # Country/leader/pop/species scope
+	name = GetDisposalHole
+	text = {
+		trigger = {
+			is_species_class = AVI
+		}
+		localization_key = disposal_hole_avi
+	}
+	text = {
+		trigger = {
+			is_species_class = MAM
+		}
+		localization_key = disposal_hole_mam
+	}
+	text = {
+		trigger = {
+			is_species_class = REP
+		}
+		localization_key = disposal_hole_rep
+	}
+	text = {
+		trigger = {
+			is_species_class = FUN
+		}
+		localization_key = disposal_hole_fun
+	}
+	text = {
+		trigger = {
+			is_species_class = MOL
+		}
+		localization_key = disposal_hole_mol
+	}
+	text = {
+		trigger = {
+			is_species_class = HUM
+		}
+		localization_key = disposal_hole_hum
+	}
+	text = {
+		trigger = {
+			is_species_class = ART
+		}
+		localization_key = disposal_hole_art
+	}
+	text = {
+		trigger = {
+			is_species_class = PLANT
+		}
+		localization_key = disposal_hole_plant
+	}
+	text = {
+		trigger = {
+			is_species_class = AQUATIC
+		}
+		localization_key = disposal_hole_aqua
+	}
+	text = {
+		trigger = {
+			is_species_class = MACHINE
+		}
+		localization_key = disposal_hole_mach
+	}
+	text = {
+		localization_key = disposal_hole_fallback
+	}
+}
+
+# Bits that can survive
+defined_text = { # Country/leader/pop/species scope
+	name = GetWasteExtra
+	text = {
+		trigger = {
+			is_species_class = AVI
+		}
+		localization_key = waste_extra_avi
+	}
+	text = {
+		trigger = {
+			is_species_class = MAM
+		}
+		localization_key = waste_extra_mam
+	}
+	text = {
+		trigger = {
+			is_species_class = REP
+		}
+		localization_key = waste_extra_rep
+	}
+	text = {
+		trigger = {
+			is_species_class = FUN
+		}
+		localization_key = waste_extra_fun
+	}
+	text = {
+		trigger = {
+			is_species_class = MOL
+		}
+		localization_key = waste_extra_mol
+	}
+	text = {
+		trigger = {
+			is_species_class = HUM
+		}
+		localization_key = waste_extra_hum
+	}
+	text = {
+		trigger = {
+			is_species_class = ART
+		}
+		localization_key = waste_extra_art
+	}
+	text = {
+		trigger = {
+			is_species_class = PLANT
+		}
+		localization_key = waste_extra_plant
+	}
+	text = {
+		trigger = {
+			is_species_class = MACHINE
+		}
+		localization_key = waste_extra_machine
+	}
+	text = {
+		localization_key = waste_extra_fallback
+	}	
+}

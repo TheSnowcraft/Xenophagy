@@ -1,0 +1,41 @@
+namespace =  xenophagy_exploration_events
+
+#####################
+# Abandoned Station #
+#####################
+# A still-powered station is discovered in the upper atmosphere of a gas giant. It's crew are entirely missing.
+
+
+
+##############################
+# Science Ship Staff Nomming #
+##############################
+# Members of the crew aboard one of our ships have turned on each other and several crewmembers have been eaten by their peers.
+
+
+
+########################
+# Statue of a Predator #
+########################
+# The crew find a lone statue depicting an alien with a prey-laden belly on an uninhabitable world.
+
+
+
+###############################
+# Predatory Fashion Discovery #
+###############################
+# A ship stumbles upon a series of provocactive erotic outfits designed to be worn with a prey-laden belly.
+
+
+
+############################
+# Records of Designer Prey #
+############################
+# A discovery of what appears to be some sort of facility dedicated to producing cloned individuals for consumption.
+
+
+
+#########################
+# Vorny Religious Texts #
+#########################
+# Discoery of religious texts focused on a religion in which individuals would willingly feed themselves whole to a living deity worshipped by their civilisation.

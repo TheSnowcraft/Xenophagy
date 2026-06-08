@@ -1,0 +1,105 @@
+######################
+# Vore Leader Traits #
+######################
+
+####################
+# Commander Traits #
+####################
+
+# Predator Skill Ranks
+# Predator Skill Ranks
+leader_trait_commander_pred_1 = {
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	councilor_modifier = {
+	}
+	leader_class = { commander }
+	opposites = {
+	}
+}
+leader_trait_commander_pred_2 = {
+	replace_traits = { "leader_trait_commander_pred_1"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { commander }
+	opposites = {
+	}
+}
+leader_trait_commander_pred_3 = {
+	replace_traits = { "leader_trait_commander_pred_2"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { commander }
+	opposites = {
+	}
+}
+leader_trait_commander_pred_4 = {
+	replace_traits = { "leader_trait_commander_pred_3"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { commander }
+	opposites = {
+	}
+}
+leader_trait_commander_pred_5 = {
+	replace_traits = { "leader_trait_commander_pred_4"  }
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		ICON = "GFX_leader_trait_pred"
+		RARITY = free_or_veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	leader_potential_add = {
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+		from = { has_trait = "trait_vore_pred" }
+	}
+	councilor_modifier = {
+	}
+	leader_class = { commander }
+	opposites = {
+	}
+}

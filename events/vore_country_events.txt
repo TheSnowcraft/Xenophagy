@@ -1,0 +1,171 @@
+namespace =  xenophagy_country_events
+
+#######################
+#   Monthly Predation #
+#######################
+
+country_event = {
+	is_triggered_only = yes
+	id = xenophagy_country_events.1
+	hide_window = yes
+
+	trigger = { 
+		any_owned_species = { has_trait = trait_vore_pred }
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop_group = { has_trait = trait_vore_pred }
+			}
+			export_trigger_value_to_variable = {
+				trigger = count_owned_pop_amount
+				parameters = {limit =  { has_trait = trait_vore_pred } }
+				variable = pred_pop_count
+			}
+			export_trigger_value_to_variable = {
+				trigger = planet_crime
+				variable = planet_crime_rate
+			}
+			if = {
+				limit = {
+					owner = {
+						has_policy_flag = predation_policy_encouraged
+					}
+				}
+				divide_variable = {
+					which = pred_pop_count
+					value = 25
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_policy_flag = predation_policy_unregulated
+					}
+				}
+				divide_variable = {
+					which = pred_pop_count
+					value = 50
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_policy_flag = predation_policy_regulated
+					}
+				}
+				divide_variable = {
+					which = pred_pop_count
+					value = 75
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_policy_flag = predation_policy_restricted
+					}
+				}
+				divide_variable = {
+					which = pred_pop_count
+					value = 100
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						has_policy_flag = predation_policy_banned
+					}
+				}
+				divide_variable = {
+					which = pred_pop_count
+					value = value:illegal_vore_rate
+				}
+			}
+			While = {
+				limit =  {
+					check_variable = {
+						which = pred_pop_count
+						value > 0
+					}
+				}
+				random_owned_pop_group = {
+					limit = {
+						species = {is_organic_species = yes}
+						pop_group_size >= 100 
+						}
+					weights = {
+						base = 100
+						modifier = {
+							factor =  5
+								species = { has_citizenship_type = { country = root type = citizenship_vore_fodder } }
+						}
+						modifier = {
+							factor =  10
+								species = { has_trait = trait_vore_prey }
+						}
+						modifier = {
+							factor =  10
+								species = { has_trait = trait_vore_prey_artifical }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_docile }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_weak }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_rapid_breeders }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_delicious }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_nerve_stapled }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_fertile }
+						}
+						modifier = {
+							factor =  4
+								species = { has_trait = trait_presapient_docile_livestock }
+						}
+					}
+					if = {
+						limit =  {
+							planet = { check_variable = {
+								which = pred_pop_count
+								value >= 100
+							} }
+						}
+						kill_single_pop = yes
+						planet = {
+							subtract_variable = {
+								which = pred_pop_count
+								value = 100
+							}
+						}
+					}
+					else = {
+						kill_pop_group = {
+							pop_group = this
+							amount = planet.pred_pop_count
+						}
+						planet = {
+							set_variable = {
+								which = pred_pop_count
+								value = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

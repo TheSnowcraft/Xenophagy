@@ -1,0 +1,179 @@
+namespace =  xenophagy_leader_events
+
+####################################
+# Opposing Ethics Leadership Fight #
+####################################
+# Opposing leaders escalate their rivalry to a full blown fight, with the winner consuming the loser.
+
+
+
+#################################
+# Predatory Imperial Succession #
+#################################
+# The Imperial Heir devours the current head of state to claim the throne for themselves.
+country_event = {
+	id = xenophagy_leader_events.2
+	title = xenophagy_leader_events.2_name
+	picture = {
+		trigger = { has_country_flag = xenophagy_disposal_enabled }
+		picture = GFX_evt_xenophagy_options
+	}
+	picture = {
+		trigger = { has_country_flag = xenophagy_graphic_digestion_enabled }
+		picture = GFX_evt_xenophagy_options
+	}
+	picture = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+		}
+		picture = GFX_evt_xenophagy_options
+	}
+
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			NOT = { has_policy_flag = predation_policy_banned }
+			has_policy_flag = predation_regulation_everyone_on_menu
+		}
+		# No Vore Rules Broken
+		text = xenophagy_leader_events.2.nofreaky_desc.1
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			has_policy_flag = predation_policy_banned
+		}
+		# Vore is Banned
+		text = xenophagy_leader_events.2.nofreaky_desc.2
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			OR = {
+				has_policy_flag = predation_regulation_specialists_and_elites_protected
+				has_policy_flag = predation_regulation_elites_protected
+			}
+		}
+		# No Eating the Elite
+		text = xenophagy_leader_events.2.nofreaky_desc.3
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			has_policy_flag = predation_regulation_slaves_only
+		}
+		# Only allowed to eat Slaves
+		text = xenophagy_leader_events.2.nofreaky_desc.4
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			has_policy_flag = predation_regulation_fodder_aliens_only
+		}
+		# Only allowed to eat Fodder
+		text = xenophagy_leader_events.2.nofreaky_desc.5
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			has_policy_flag = predation_regulation_noncitizens_only
+		}
+		# Only allowed to eat non-citizens
+		text = xenophagy_leader_events.2.nofreaky_desc.6
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = xenophagy_disposal_enabled
+				has_country_flag = xenophagy_graphic_digestion_enabled
+			}
+			has_policy_flag = predation_regulation_aliens_only
+		}
+		# Only allowed to eat aliens
+		text = xenophagy_leader_events.2.nofreaky_desc.7
+	}
+	
+	trigger = {
+		has_authority = auth_imperial
+		
+		heir = {
+			species = {
+				has_trait = trait_vore_pred
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months  = 13
+		modifier = {
+			factor = 4
+			has_policy_flag = predation_policy_encouraged
+		}
+		modifier = {
+			factor = 2
+			has_policy_flag = predation_policy_unregulated
+		}
+		modifier = {
+			factor = 1
+			has_policy_flag = predation_policy_regulated
+		}
+		modifier = {
+			factor = 0.5
+			has_policy_flag = predation_policy_restricted
+		}
+		modifier = {
+			factor = 0.1
+			has_policy_flag = predation_policy_banned
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_event_target_as = eaten_ruler
+		}
+		heir = {
+			save_event_target_as = predator_heir
+		}
+	}
+}
+
+###################################
+# Leader Eaten by unhappy faction #
+###################################
+# A leader is consumed by a faction that is unhappy with their rule.
+
+
+
+################################
+# Paranoid Leader Eats Advisor #
+################################
+# A paranoid leader consumes one of their advisors out of fear that they are plotting against them.
+
+
+
+############################
+# Public Event Gone Gurgly #
+############################
+# A governor hosts an event for the general public. Someone ends up eaten.
+

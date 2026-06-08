@@ -1,0 +1,30 @@
+﻿l_english:
+
+ ##############################################
+ #                  MISC THINGS
+ ##############################################
+
+ # Buttholes
+ disposal_hole_avi: "cloaca"
+ disposal_hole_mam: "ass"
+ disposal_hole_rep: "cloaca"
+ disposal_hole_fun: "stoma"
+ disposal_hole_mol: "ass"
+ disposal_hole_hum: "ass"
+ disposal_hole_art: "ass"
+ disposal_hole_plant: "stoma"
+ disposal_hole_aqua: "cloaca"
+ disposal_hole_mach: "waste port"
+ disposal_hole_fallback: "ass"
+
+ # Surviving Body bits.
+ waste_extra_avi: "mangled feathers"
+ waste_extra_mam: "tufts of acid-bleached fur"
+ waste_extra_rep: "acid-bleached scales"
+ waste_extra_fun: ""
+ waste_extra_mol: ""
+ waste_extra_hum: ""
+ waste_extra_art: "flakes of acid-bleached chitin."
+ waste_extra_plant: ""
+ waste_extra_machine: "bits of scrap"
+ waste_extra_fallback: ""

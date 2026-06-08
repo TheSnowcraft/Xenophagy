@@ -1,0 +1,72 @@
+﻿l_english:
+
+ ##############################################
+ #                  POLICIES                  #
+ ##############################################
+
+policy_predation_policy: "Predation Policy"
+policy_predation_policy_name: "Predation Policy"
+policy_predation_policy_desc: "Predation is the practice of consuming other sentient beings, typically alive and whole."
+
+predation_policy_encouraged: "Predation Encouraged"
+predation_policy_encouraged_name: "Predation Encouraged"
+predation_policy_encouraged_desc: "Predation is encouraged, and is widely accepted in society.\n\nGreatly increases the rate of pops engaging in predation."
+
+predation_policy_unregulated: "Predation Unregulated"
+predation_policy_unregulated_name: "Predation Unregulated"
+predation_policy_unregulated_desc: "Predation is unregulated, and is not explicitly condemned by the state.\n\nIncreases the rate of pops engaging in predation."
+
+predation_policy_regulated: "Predation Regulated"
+predation_policy_regulated_name: "Predation Regulated"
+predation_policy_regulated_desc: "Predation is regulated, and is only allowed under certain conditions.  Allows access to predation regulation policies.\n\nDecreases the rate of pops engaging in predation."
+
+predation_policy_restricted: "Predation Restricted"
+predation_policy_restricted_name: "Predation Restricted"
+predation_policy_restricted_desc: "Predation is restricted, and is only allowed under very limited circumstances. Allows access to predation regulation policies.\n\nSignificantly decreases the rate of pops engaging in predation."
+
+predation_policy_banned: "Predation Banned"
+predation_policy_banned_name: "Predation Banned"
+predation_policy_banned_desc: "Predation is banned, and is strictly outlawed. Some pops will still practice predation, especially when crime is high.\n\nAlmost completely eliminates the rate of pops engaging in predation, except when crime is high."
+
+policy_predation_regulation: "Predation Regulation"
+policy_predation_regulation_name: "Predation Regulation"
+policy_predation_regulation_desc: "These regulations determine which groups may be or may not be eaten legally."
+
+predation_regulation_fodder_aliens_only: "Fodder Aliens Only"
+predation_regulation_fodder_aliens_only_name: "Fodder Aliens Only"
+predation_regulation_fodder_aliens_only_desc: "Only designated fodder species may be eaten. Citizens and other populations are off the menu. Livestock Slaves are considered Fodder for this policy."
+
+predation_regulation_aliens_only: "Aliens Only"
+predation_regulation_aliens_only_name: "Aliens Only"
+predation_regulation_aliens_only_desc: "Predation of our main species is banned. Other species, regardless of citizenship, may be eaten freely."
+
+predation_regulation_noncitizens_only: "Non-Citizens Only"
+predation_regulation_noncitizens_only_name: "Non-Citizens Only"
+predation_regulation_noncitizens_only_desc: "Predation of citizen species is banned. Other species may be eaten freely."
+
+predation_regulation_elites_protected: "Elites Protected"
+predation_regulation_elites_protected_name: "Elites Protected"
+predation_regulation_elites_protected_desc: "Predation of leaders and the elite is banned. Workers and specialists may be freely eaten, regardless of species."
+
+predation_regulation_specialists_and_elites_protected: "Specialists and Elites Protected"
+predation_regulation_specialists_and_elites_protected_name: "Specialists and Elites Protected"
+predation_regulation_specialists_and_elites_protected_desc: "Only worker-stratum pops may be eaten; consumption of specialists and elites is banned."
+
+predation_regulation_slaves_only: "Slaves Only"
+predation_regulation_slaves_only_name: "Slaves Only"
+predation_regulation_slaves_only_desc: "Enslaved Pops, regardless of slavery type, may be eaten freely; consumption of other pops is banned."
+
+predation_regulation_everyone_on_menu: "Everyone On Menu"
+predation_regulation_everyone_on_menu_name: "Everyone On Menu"
+predation_regulation_everyone_on_menu_desc: "We have no regulations on who can or cannot be eaten."
+
+ ############################################
+ #               CITIZENSHIPS               #
+ ############################################
+citizenship_vore_fodder: "Fodder"
+citizenship_vore_fodder_name: "Fodder"
+citizenship_vore_fodder_desc: "Foddery designates a species as being intended specifically for consumption by the wider population. While still technically free, they are afforded no protections from predation and may be singularly targeted out as food by others."
+citizenship_vore_fodder_tooltip: "Pops are free, but are recognised as food for local predators.\n\n§EPop Effects§!\n§LPrey Pops:§! Happiness: §G+50%§!\n§LPred Pops:§! Happiness: §R-95%§!\n§LOther Pops:§! Happiness: §R-75%§!\nPop Ammenities Usage: §G-25%§!\nPop Political Power:§R-75%§!"
+citizenship_vore_fodder_requires_organic: "We cannot eat non-organic pops!"
+citizenship_vore_fodder_desc_delayed: "The state has declared this species... delicious!"
+citizenship_vore_fodder_tooltip_delayed: "Fodder are pops designated for eating by predator pops."

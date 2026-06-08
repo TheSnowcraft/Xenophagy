@@ -1,0 +1,9 @@
+
+####################
+# Reformation Tech #
+####################
+
+#########################
+# Disposal-Related Tech #
+#########################
+# Can only be rolled with disposal content enabled. Should be realitively minor for multiplayer balance when most people don't want to run disposal.

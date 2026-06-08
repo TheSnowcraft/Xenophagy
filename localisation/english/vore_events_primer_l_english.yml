@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ##############################################
+ #         PRIMER / GAME START
+ ##############################################
+
+ xenophagy_options.2.name: "Xenophagy Content Options"
+ xenophagy_options.2.desc: "§TThank you for using the Xenophagy mod! \n This  menu allows you to enable or disable certain features of this mod."
+
+ xenophagy_options.enable_disposal: "§RDisposal currently disabled§!"
+ xenophagy_options.enable_disposal_tooltip: "Disposal is currently disabled. Images of, and references to, disposal will not appear in events, technologies, or descriptions."   
+ xenophagy_options.disable_disposal: "§GDisposal currently enabled"
+ xenophagy_options.disable_disposal_tooltip: "Disposal is currently enabled. Images of, and references to, disposal will appear in events, technologies, and descriptions."      
+
+ xenophagy_options.enable_graphic_digestion: "§RGraphic digestion currently disabled"
+ xenophagy_options.enable_graphic_digestion_tooltip: "Graphic digestion is currently disabled. Images of, and references to, graphic digestion will not appear in events, technologies, or descriptions."   
+ xenophagy_options.disable_graphic_digestion: "§GGraphic digestion currently enabled"
+ xenophagy_options.disable_graphic_digestion_tooltip: "Graphic digestion is currently enabled. Images of, and references to, graphic digestion will appear in events, technologies, and descriptions."
+
+ xenophagy_options.exit: "Exit"
