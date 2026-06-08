@@ -1,8 +1,8 @@
 namespace =  xenophagy_country_events
 
-#######################
-#   Monthly Predation #
-#######################
+################################
+#   Monthly Organics Predation #
+################################
 
 country_event = {
 	is_triggered_only = yes
@@ -18,74 +18,14 @@ country_event = {
 			limit = {
 				any_owned_pop_group = { has_trait = trait_vore_pred }
 			}
-			export_trigger_value_to_variable = {
-				trigger = count_owned_pop_amount
-				parameters = {limit =  { has_trait = trait_vore_pred } }
-				variable = pred_pop_count
-			}
-			export_trigger_value_to_variable = {
-				trigger = planet_crime
-				variable = planet_crime_rate
-			}
-			if = {
-				limit = {
-					owner = {
-						has_policy_flag = predation_policy_encouraged
-					}
-				}
-				divide_variable = {
-					which = pred_pop_count
-					value = 25
-				}
-			}
-			if = {
-				limit = {
-					owner = {
-						has_policy_flag = predation_policy_unregulated
-					}
-				}
-				divide_variable = {
-					which = pred_pop_count
-					value = 50
-				}
-			}
-			if = {
-				limit = {
-					owner = {
-						has_policy_flag = predation_policy_regulated
-					}
-				}
-				divide_variable = {
-					which = pred_pop_count
-					value = 75
-				}
-			}
-			if = {
-				limit = {
-					owner = {
-						has_policy_flag = predation_policy_restricted
-					}
-				}
-				divide_variable = {
-					which = pred_pop_count
-					value = 100
-				}
-			}
-			if = {
-				limit = {
-					owner = {
-						has_policy_flag = predation_policy_banned
-					}
-				}
-				divide_variable = {
-					which = pred_pop_count
-					value = value:illegal_vore_rate
-				}
+			set_variable = {
+				which = monthly_vore_pops_eaten_count
+				value = value:monthly_vore_pops_eaten
 			}
 			While = {
 				limit =  {
 					check_variable = {
-						which = pred_pop_count
+						which = monthly_vore_pops_eaten_count
 						value > 0
 					}
 				}
@@ -140,14 +80,14 @@ country_event = {
 					if = {
 						limit =  {
 							planet = { check_variable = {
-								which = pred_pop_count
+								which = monthly_vore_pops_eaten_count
 								value >= 100
 							} }
 						}
 						kill_single_pop = yes
 						planet = {
 							subtract_variable = {
-								which = pred_pop_count
+								which = monthly_vore_pops_eaten_count
 								value = 100
 							}
 						}
@@ -155,11 +95,11 @@ country_event = {
 					else = {
 						kill_pop_group = {
 							pop_group = this
-							amount = planet.pred_pop_count
+							amount = planet.monthly_vore_pops_eaten_count
 						}
 						planet = {
 							set_variable = {
-								which = pred_pop_count
+								which = monthly_vore_pops_eaten_count
 								value = 0
 							}
 						}

@@ -1,6 +1,46 @@
+
 illegal_vore_rate = {
     base = 150
     subtract = trigger:planet_crime
 }
 
-
+monthly_vore_pops_eaten = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = count_owned_pop_amount
+            parameters = {
+                limit = { has_trait = trait_vore_pred }
+            }
+        mode = add
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_encouraged
+        }
+    divide = 25
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_unregulated
+        }
+    divide = 50
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_regulated
+        }
+    divide = 75
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_restricted
+        }
+    divide = 100
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_banned
+        }
+    divide = value:illegal_vore_rate
+    }
+}
