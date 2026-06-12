@@ -11,6 +11,13 @@ on_game_start_country = {
 
 on_monthly_pulse_country = {
 	events = {
+		# Monthly Organic/Organic Noms
 		xenophagy_country_events.1
+		# Monthly Lithoid/Lithoid+Machine Noms
+		xenophagy_country_events.2
+		# Monthly Machine/Organic Noms
+		xenophagy_country_events.3
+		# Monthly Machine/Machine+Lithoid Noms
+		xenophagy_country_events.4
 	}
 }

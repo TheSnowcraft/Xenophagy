@@ -1,0 +1,9 @@
+# Sets weights for which pops get eaten by monthly lithoid nomming event.
+weights = {
+    base = 50
+	# More Likely to be Eaten
+    modifier = {
+        factor = 5
+        species = { has_citizenship_type = { country = root type = citizenship_vore_fodder } }
+    }
+}

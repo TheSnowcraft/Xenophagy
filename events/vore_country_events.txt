@@ -19,36 +19,36 @@ country_event = {
 				any_owned_pop_group = { has_trait = trait_vore_pred }
 			}
 			set_variable = {
-				which = monthly_vore_pops_eaten_count
-				value = value:monthly_vore_pops_eaten
+				which = monthly_organic_vore_pops_eaten_count
+				value = value:monthly_organic_vore_pops_eaten
 			}
 			While = {
 				limit =  {
 					check_variable = {
-						which = monthly_vore_pops_eaten_count
+						which = monthly_organic_vore_pops_eaten_count
 						value > 0
 					}
 				}
 				random_owned_pop_group = {
-					limit = {
+					limit = { # Organics only eat other Organics
 						species = {is_organic_species = yes}
 						pop_group_size >= 100 
 						}
 						
-					# Call external weights for who to eat.
-					inline_script = { script = vore_pop_edibility_script }
+					# Call external weights for who to eat. Lithoids have unique preferences.
+					inline_script = { script = vore_organic_pop_edibility_script }
 
 					if = {
 						limit =  {
 							planet = { check_variable = {
-								which = monthly_vore_pops_eaten_count
+								which = monthly_organic_vore_pops_eaten_count
 								value >= 100
 							} }
 						}
 						kill_single_pop = yes
 						planet = {
 							subtract_variable = {
-								which = monthly_vore_pops_eaten_count
+								which = monthly_organic_vore_pops_eaten_count
 								value = 100
 							}
 						}
@@ -56,11 +56,232 @@ country_event = {
 					else = {
 						kill_pop_group = {
 							pop_group = this
-							amount = planet.monthly_vore_pops_eaten_count
+							amount = planet.monthly_organic_vore_pops_eaten_count
 						}
 						planet = {
 							set_variable = {
-								which = monthly_vore_pops_eaten_count
+								which = monthly_organic_vore_pops_eaten_count
+								value = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+################################
+#   Monthly Lithoids Predation #
+################################
+
+country_event = {
+	is_triggered_only = yes
+	id = xenophagy_country_events.2
+	hide_window = yes
+
+	trigger = { 
+		any_owned_species = { has_trait = trait_vore_lithoid_pred }
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop_group = { has_trait = trait_vore_lithoid_pred }
+			}
+			set_variable = {
+				which = monthly_lithoid_vore_pops_eaten_count
+				value = value:monthly_lithoid_vore_pops_eaten
+			}
+			While = {
+				limit =  {
+					check_variable = {
+						which = monthly_lithoid_vore_pops_eaten_count
+						value > 0
+					}
+				}
+				random_owned_pop_group = {
+					limit = { # Lithoids eat other Lithoids and Machines
+						OR = {
+							species = {is_lithoid = yes}
+							species = {is_archetype = ROBOT}
+							species = {is_archetype = MACHINE}
+						}
+						pop_group_size >= 100 
+						}
+						
+					# Call external weights for who to eat.
+					inline_script = { script = vore_lithoid_pop_edibility_script }
+
+					if = {
+						limit =  {
+							planet = { check_variable = {
+								which = monthly_lithoid_vore_pops_eaten_count
+								value >= 100
+							} }
+						}
+						kill_single_pop = yes
+						planet = {
+							subtract_variable = {
+								which = monthly_lithoid_vore_pops_eaten_count
+								value = 100
+							}
+						}
+					}
+					else = {
+						kill_pop_group = {
+							pop_group = this
+							amount = planet.monthly_lithoid_vore_pops_eaten_count
+						}
+						planet = {
+							set_variable = {
+								which = monthly_lithoid_vore_pops_eaten_count
+								value = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+##########################################
+#   Monthly Machine on Organic Predation #
+##########################################
+
+country_event = {
+	is_triggered_only = yes
+	id = xenophagy_country_events.3
+	hide_window = yes
+
+	trigger = { 
+		any_owned_species = { has_trait = trait_vore_predbot }
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop_group = { has_trait = trait_vore_predbot }
+			}
+			set_variable = {
+				which = monthly_machine_organic_vore_pops_eaten_count
+				value = value:monthly_machine_organic_vore_pops_eaten
+			}
+			While = {
+				limit =  {
+					check_variable = {
+						which = monthly_machine_organic_vore_pops_eaten_count
+						value > 0
+					}
+				}
+				random_owned_pop_group = {
+					limit = { # This trait only eat Organics
+						species = {is_organic_species = yes}
+						pop_group_size >= 100 
+						}
+						
+					# Call external weights for who to eat. Organic-eating machines have unique preferences.
+					inline_script = { script = vore_machine_organic_pop_edibility_script }
+
+					if = {
+						limit =  {
+							planet = { check_variable = {
+								which = monthly_machine_organic_vore_pops_eaten_count
+								value >= 100
+							} }
+						}
+						kill_single_pop = yes
+						planet = {
+							subtract_variable = {
+								which = monthly_machine_organic_vore_pops_eaten_count
+								value = 100
+							}
+						}
+					}
+					else = {
+						kill_pop_group = {
+							pop_group = this
+							amount = planet.monthly_machine_organic_vore_pops_eaten_count
+						}
+						planet = {
+							set_variable = {
+								which = monthly_machine_organic_vore_pops_eaten_count
+								value = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+##################################################
+#   Monthly Machine on Machine/Lithoid Predation #
+##################################################
+
+country_event = {
+	is_triggered_only = yes
+	id = xenophagy_country_events.4
+	hide_window = yes
+
+	trigger = { 
+		any_owned_species = { has_trait = trait_vore_machine_eater }
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				any_owned_pop_group = { has_trait = trait_vore_machine_eater }
+			}
+			set_variable = {
+				which = monthly_machine_machine__vore_pops_eaten_count
+				value = value:monthly_machine_machine__vore_pops_eaten
+			}
+			While = {
+				limit =  {
+					check_variable = {
+						which = monthly_machine_machine_vore_pops_eaten_count
+						value > 0
+					}
+				}
+				random_owned_pop_group = {
+					limit = { # Machines eat other Machines and Lithoids
+						OR = {
+							species = {is_lithoid = yes}
+							species = {is_archetype = ROBOT}
+							species = {is_archetype = MACHINE}
+						}
+						pop_group_size >= 100 
+						}
+						
+					# Call external weights for who to eat. Machine-eating machines have unique preferences.
+					inline_script = { script = vore_machine_machine_pop_edibility_script }
+
+					if = {
+						limit =  {
+							planet = { check_variable = {
+								which = monthly_machine_machine_vore_pops_eaten_count
+								value >= 100
+							} }
+						}
+						kill_single_pop = yes
+						planet = {
+							subtract_variable = {
+								which = monthly_machine_machine_vore_pops_eaten_count
+								value = 100
+							}
+						}
+					}
+					else = {
+						kill_pop_group = {
+							pop_group = this
+							amount = planet.monthly_machine_machine_vore_pops_eaten_count
+						}
+						planet = {
+							set_variable = {
+								which = monthly_machine_machine_vore_pops_eaten_count
 								value = 0
 							}
 						}

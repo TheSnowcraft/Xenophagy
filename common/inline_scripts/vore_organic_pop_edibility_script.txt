@@ -1,4 +1,4 @@
-# Sets weights for which pops get eaten by monthly nomming event.
+# Sets weights for which pops get eaten by monthly organic nomming event.
 weights = {
     base = 50
 	# More Likely to be Eaten
