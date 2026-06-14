@@ -138,6 +138,7 @@ trait_vore_predbot = {
     }
 
    custom_tooltip = trait_vore_predbot_effects
+    opposites = {"trait_vore_machine_eater"}
 
   	modifier = {
       
@@ -158,6 +159,7 @@ trait_vore_machine_eater = {
     }
 
    custom_tooltip = trait_vore_machine_eater_effects
+    opposites = {"trait_vore_predbot"}
 
   	modifier = {
       

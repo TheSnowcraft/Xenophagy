@@ -4,12 +4,138 @@ illegal_vore_rate = {
     subtract = trigger:planet_crime
 }
 
+# Organic Preds
 monthly_organic_vore_pops_eaten = {
     base = 0
     complex_trigger_modifier = {
         trigger = count_owned_pop_amount
             parameters = {
                 limit = { has_trait = trait_vore_pred }
+            }
+        mode = add
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_encouraged
+        }
+    divide = 25
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_unregulated
+        }
+    divide = 50
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_regulated
+        }
+    divide = 75
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_restricted
+        }
+    divide = 100
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_banned
+        }
+    divide = value:illegal_vore_rate
+    }
+}
+# Lithoid Preds
+monthly_lithoid_vore_pops_eaten = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = count_owned_pop_amount
+            parameters = {
+                limit = { has_trait = trait_vore_lithoid_pred }
+            }
+        mode = add
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_encouraged
+        }
+    divide = 25
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_unregulated
+        }
+    divide = 50
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_regulated
+        }
+    divide = 75
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_restricted
+        }
+    divide = 100
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_banned
+        }
+    divide = value:illegal_vore_rate
+    }
+}
+
+# Machine Preds that eat Organics
+monthly_machine_organic_vore_pops_eaten = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = count_owned_pop_amount
+            parameters = {
+                limit = { has_trait = trait_vore_predbot }
+            }
+        mode = add
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_encouraged
+        }
+    divide = 25
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_unregulated
+        }
+    divide = 50
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_regulated
+        }
+    divide = 75
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_restricted
+        }
+    divide = 100
+    }
+    modifier = {
+        owner = {
+            has_policy_flag = predation_policy_banned
+        }
+    divide = value:illegal_vore_rate
+    }
+}
+
+# Machine Preds that eat Machines/Lithoids
+monthly_machine_machine__vore_pops_eaten = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = count_owned_pop_amount
+            parameters = {
+                limit = { has_trait = trait_vore_machine_eater }
             }
         mode = add
     }

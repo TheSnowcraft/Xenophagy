@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	#############################
+	###     Leader Traits     ###
+	#############################
+	
+	# Positive #
+	
+	# Psychological #
+
+	spriteType = {
+		name = "GFX_leader_trait_pred"
+		texturefile = "gfx/interface/icons/traits/leader_traits/GFX_leader_trait_pred.dds"
+	}
+}
