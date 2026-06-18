@@ -4,7 +4,36 @@ namespace =  xenophagy_leader_events
 # Opposing Ethics Leadership Fight #
 ####################################
 # Opposing leaders escalate their rivalry to a full blown fight, with the winner consuming the loser.
+country_event = {
+	id = xenophagy_leader_events.1
+	title = xenophagy_leader_events.1_name
+	
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				species = { has_trait = trait_vore_pred }
+				has_base_skill > 4
+			}
+			save_event_target_as = opposing_ethics_nomms_leader1
+		}
+	}
 
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				NOT = { is_same_value = event_target:opposing_ethics_nomms_leader1 }
+				if = {
+					event_target:opposing_ethics_nomms_leader1 = { is_pacifist = yes }
+					limit = {
+						is_militarist = yes
+					}
+				}
+			}
+			save_event_target_as = opposing_ethics_nomms_leader2
+		}
+	}
+
+}
 
 
 #################################
@@ -125,7 +154,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months  = 13
+		months  = 1300
 		modifier = {
 			factor = 4
 			has_policy_flag = predation_policy_encouraged
@@ -162,18 +191,100 @@ country_event = {
 # Leader Eaten by unhappy faction #
 ###################################
 # A leader is consumed by a faction that is unhappy with their rule.
-
-
+country_event = {
+	id = xenophagy_leader_events.3
+	title = xenophagy_leader_events.3_name
+	
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				species = { has_trait = trait_vore_pred }
+				has_base_skill > 4
+			}
+			save_event_target_as = opposing_ethics_nomms_leader1
+		}
+	}
+}
 
 ################################
 # Paranoid Leader Eats Advisor #
 ################################
 # A paranoid leader consumes one of their advisors out of fear that they are plotting against them.
-
-
+country_event = {
+	id = xenophagy_leader_events.4
+	title = xenophagy_leader_events.4_name
+	
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				species = { has_trait = trait_vore_pred }
+				has_base_skill > 4
+			}
+			save_event_target_as = opposing_ethics_nomms_leader1
+		}
+	}
+}
 
 ############################
 # Public Event Gone Gurgly #
 ############################
 # A governor hosts an event for the general public. Someone ends up eaten.
+country_event = {
+	id = xenophagy_leader_events.5
+	title = xenophagy_leader_events.5_name
+	
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				species = { has_trait = trait_vore_pred }
+				has_base_skill > 4
+			}
+			save_event_target_as = opposing_ethics_nomms_leader1
+		}
+	}
+}
 
+###########################
+# Naval Officer Predation #
+###########################
+# An admiral assigned to a naval fleet gets into a row with their second in command. This results in one of the two being eaten.
+country_event = {
+	id = xenophagy_leader_events.6
+	title = xenophagy_leader_events.6_name
+	hide_window = yes
+	
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				species = { has_trait = trait_vore_pred }
+				leader_class = commander
+        		exists = fleet
+			}
+			save_event_target_as = admiral_predation_leader
+		}
+		random_list = {
+			# Admiral Eats Second SIC.
+			50 = {
+				country_event = { id = xenophagy_leader_events.6.1 }
+			 }
+			# SIC Eats Admiral
+			50 = {
+				country_event = { id = xenophagy_leader_events.6.2 }
+			 }
+		}
+	}
+}
+
+# Admiral Eats Second SIC.
+country_event = {
+	id = xenophagy_leader_events.6.1
+	title = xenophagy_leader_events.6.1_name
+	is_triggered_only = yes
+}
+
+# SIC Eats Admiral
+country_event = {
+	id = xenophagy_leader_events.6.2
+	title = xenophagy_leader_events.6.2_name
+	is_triggered_only = yes
+}

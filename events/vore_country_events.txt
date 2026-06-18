@@ -14,7 +14,7 @@ country_event = {
 	}
 
 	immediate = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
 				any_owned_pop_group = { has_trait = trait_vore_pred }
 			}
@@ -22,6 +22,7 @@ country_event = {
 				which = monthly_organic_vore_pops_eaten_count
 				value = value:monthly_organic_vore_pops_eaten
 			}
+			
 			While = {
 				limit =  {
 					check_variable = {
@@ -85,7 +86,7 @@ country_event = {
 	}
 
 	immediate = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
 				any_owned_pop_group = { has_trait = trait_vore_lithoid_pred }
 			}
@@ -160,7 +161,7 @@ country_event = {
 	}
 
 	immediate = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
 				any_owned_pop_group = { has_trait = trait_vore_predbot }
 			}
@@ -231,7 +232,7 @@ country_event = {
 	}
 
 	immediate = {
-		every_owned_planet = {
+		every_owned_colony = {
 			limit = {
 				any_owned_pop_group = { has_trait = trait_vore_machine_eater }
 			}

@@ -141,8 +141,20 @@ trait_vore_predbot = {
     opposites = {"trait_vore_machine_eater"}
 
   	modifier = {
-      
   	}
+    
+    resources = {
+		category = planet_pops
+		# Consumes Food instead of Energy
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				is_sapient = yes
+			}
+			energy = -1
+      food = @living_standard_energy_normal
+		}
+	}
 }
 
 trait_vore_machine_eater = {

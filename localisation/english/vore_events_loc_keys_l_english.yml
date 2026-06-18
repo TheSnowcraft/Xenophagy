@@ -1,24 +1,28 @@
 ﻿l_english:
 
+ # Pop modifiers
+ vore_organic_pop_ate_someone: "Predatory Feeding"
+ vore_organic_pop_ate_someone_desc: "This pop benefits from the reduced upkeep from predatory feeding."
+
  #################################
  # Predatory Imperial Succession #
  #################################
 
- xenophagy_leader_events.2.opening: "[GetRulerTitle] [GetRulerName] is dead. [eaten_ruler.GetSheHeCap] has been eaten by [GetHeirTitle] [GetHeirName] in a brazen display of public predation. By the time anyone was able to realize what was happening, it was already too late to save the [GetRulerTitle] from the digestive process, the gathered leaders and officials of the [From.GetName] staring in stunned silence as [GetRulerName] vanished down [GetHeirName]'s gullet.\n\n"
+ xenophagy_leader_events.2.opening: "[root.GetRulerTitle] [root.GetRulerName] is dead. [eaten_ruler.GetSheHeCap] has been eaten by [root.GetHeirTitle] [root.GetHeirName] in a brazen display of public predation. By the time anyone was able to realize what was happening, it was already too late to save the [root.GetRulerTitle] from the digestive process, the gathered leaders and officials of the [root.From.GetName] staring in stunned silence as [root.GetRulerName] vanished down [root.GetHeirName]'s gullet.\n\n"
 
- xenophagy_leader_events.2.closing.vore_is_fine: "Per the rights of succession, this would make [GetHeirName] the new [GetRulerName] of the [From.GetName]."
+ xenophagy_leader_events.2.closing.vore_is_fine: "Per the rights of succession, this would make [root.GetHeirTitle] [root.GetHeirName] the new [root.GetRulerTitle] of the [root.From.GetName]."
 
- xenophagy_leader_events.2.closing.vore_rules_broken: "While our succession laws would consider [GetHeirTitle] [GetHeirName] the rightful [GetRulerTitle] under normal circurmstances, the fact that [GetHeirName] has flagrantly violated the [From.GetName]'s"
- xenophagy_leader_events.2.closing.leaders_want_exile: "leaves many officals deeply hesitant to support the succession, and there are calls for [GetHeirName] to be exiled as punishment."
+ xenophagy_leader_events.2.closing.vore_rules_broken: "While our succession laws would consider [root.GetHeirTitle] [root.GetHeirName] the rightful [root.GetRulerTitle] under normal circurmstances, the fact that [root.GetHeirName] has flagrantly violated the [root.From.GetName]'s"
+ xenophagy_leader_events.2.closing.leaders_want_exile: "leaves many officals deeply hesitant to support the succession, and there are calls for [root.GetHeirName] to be exiled as punishment."
 
  xenophagy_leader_events.2.closing.vore_is_banned: "$xenophagy_leader_events.2.closing.vore_rules_broken$ prohibitions on all predation $xenophagy_leader_events.2.closing.leaders_want_exile$"
 
- xenophagy_leader_events.2.closing.no_voring_elites: "$xenophagy_leader_events.2.closing.vore_rules_broken$ prohibitions on predation of the nation's upper strata - especially against the [GetRulerTitle] [eaten_ruler.GetHerHim]self in such a high-profile manner $xenophagy_leader_events.2.closing.leaders_want_exile$"
+ xenophagy_leader_events.2.closing.no_voring_elites: "$xenophagy_leader_events.2.closing.vore_rules_broken$ prohibitions on predation of the nation's upper strata - especially against the [root.GetRulerTitle] [eaten_ruler.GetHerHim]self in such a high-profile manner $xenophagy_leader_events.2.closing.leaders_want_exile$"
 
- xenophagy_leader_events.2.closing.only_vore_fodder: "$xenophagy_leader_events.2.closing.vore_rules_broken$ laws against the consumption of non-fodder species - by eating the [GetRulerTitle] no less - $xenophagy_leader_events.2.closing.leaders_want_exile$"
+ xenophagy_leader_events.2.closing.only_vore_fodder: "$xenophagy_leader_events.2.closing.vore_rules_broken$ laws against the consumption of non-fodder species - by eating the [root.GetRulerTitle] no less - $xenophagy_leader_events.2.closing.leaders_want_exile$"
 
- xenophagy_leader_events.2.closing.only_vore_slaves: "$xenophagy_leader_events.2.closing.vore_rules_broken$ laws against the consumption of free persons - by eating the [GetRulerTitle] no less - $xenophagy_leader_events.2.closing.leaders_want_exile$"
+ xenophagy_leader_events.2.closing.only_vore_slaves: "$xenophagy_leader_events.2.closing.vore_rules_broken$ laws against the consumption of free persons - by eating the [root.GetRulerTitle] no less - $xenophagy_leader_events.2.closing.leaders_want_exile$"
 
-xenophagy_leader_events.2.disposal_segment: "Our gathered officials were also offered an opportunity to watch the [GetRulerTitle]'s remains' pour out of the [GetHeirTitle]'s [predator_heir.GetDisposalHole]. Or, more accurately, forced to watch by the [GetHeirTitle] as once [GetHeirName] finished digesting [GetRulerName], [GetHeirName] would dispose of [eaten_ruler.GetHerHis] remains in front of the onlooking officals, what little was left of [GetRulerName] pouring from [GetHeirTitle]'s [predator_heir.GetDisposalHole] as a thick brown sludge filled with snapped bones and hints of [eaten_ruler.GetWasteExtra]. [GetRulerName]'s skull crowned the mound of odourus muck like a grim crown, empty eyesockets and open [eaten_ruler.GetMouthName] filled with dung.\n\n"
+xenophagy_leader_events.2.disposal_segment: "Our gathered officials were also offered an opportunity to watch the [root.GetRulerTitle]'s remains' pour out of the [root.GetHeirTitle]'s [predator_heir.GetDisposalHole]. Or, more accurately, forced to watch by the [root.GetHeirTitle] as once [root.GetHeirName] finished digesting [root.GetRulerName], [root.GetHeirName] would dispose of [eaten_ruler.GetHerHis] remains in front of the onlooking officals, what little was left of [root.GetRulerName] pouring from [root.GetHeirTitle]'s [predator_heir.GetDisposalHole] as a thick brown sludge filled with snapped bones and hints of [eaten_ruler.GetWasteExtra]. [root.GetRulerName]'s skull crowned the mound of odourus muck like a grim crown, empty eyesockets and open [eaten_ruler.GetMouthName] filled with dung.\n\n"
 
-xenophagy_leader_events.2.graphic_digestion_segment: ""
+xenophagy_leader_events.2.graphic_digestion_segment: "WIP"
