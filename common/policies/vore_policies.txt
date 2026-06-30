@@ -16,6 +16,7 @@ predation_policy = {
 	option = {
 		name = "predation_policy_encouraged"
 		policy_flags = {predation_policy_encouraged}
+		
 		modifier = {
 			
 		}
@@ -28,6 +29,9 @@ predation_policy = {
 	option = {
 		name = "predation_policy_unregulated"
 		policy_flags = {predation_policy_unregulated}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -40,6 +44,9 @@ predation_policy = {
 	option = {
 		name = "predation_policy_regulated"
 		policy_flags = {predation_policy_regulated}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -52,7 +59,9 @@ predation_policy = {
 	option = {
 		name = "predation_policy_restricted"
 		policy_flags = {predation_policy_restricted}
-		
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -65,7 +74,9 @@ predation_policy = {
 	option = {
 		name = "predation_policy_banned"
 		policy_flags = {predation_policy_banned}
-
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -82,6 +93,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_fodder_aliens_only"
 		policy_flags = {predation_regulation_fodder_aliens_only}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -93,6 +107,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_aliens_only"
 		policy_flags = {predation_regulation_aliens_only}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -104,6 +121,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_noncitizens_only"
 		policy_flags = {predation_regulation_noncitizens_only}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -115,6 +135,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_elites_protected"
 		policy_flags = {predation_regulation_elites_protected}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -127,6 +150,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_specialists_and_elites_protected"
 		policy_flags = {predation_regulation_specialists_and_elites_protected}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
@@ -139,6 +165,9 @@ predation_regulation = {
 	option = {
 		name = "predation_regulation_slaves_only"
 		policy_flags = {predation_regulation_slaves_only}
+		potential = {
+			NOT = { has_valid_civic = civic_predatory_darwinism }
+		}
 		modifier = {
 			
 		}
